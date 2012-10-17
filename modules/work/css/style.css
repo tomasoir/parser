@@ -1,0 +1,27 @@
+
+.tableview {
+  margin:5px 0px 5px 0px;
+  width:100% ;
+  word-wrap: break-word;
+}
+.tableview th{
+    background: none repeat scroll 0 0 #72A25D;
+    border: 1px double #808080;
+    color: black;
+    font-family: Georgia,serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 5px;
+}
+
+.tableview td  {
+    background: none repeat scroll 0 0 #E7EFFD;
+    border: 1px solid #808080;
+    color: #383838;
+    font-family: 'Courier New',Courier,monospace;
+    font-size: 14px;
+    padding: 3px 5px;
+    word-wrap: break-word;
+
+}
+
