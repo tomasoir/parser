@@ -1,0 +1,1389 @@
+/******************************************************************************************************/
+/***************************************************Variables******************************************/
+/******************************************************************************************************/
+
+/*Box background color (Contact, Department, Staff etc.. boxes)*/
+$_boxBackgroundColor_ = #e8e8e8;
+$_boxBackgroundColorDark_ = #000a12;
+
+/* Price/Phone color*/
+$_priceColor_ = #0f8603;
+
+/*Butons and Tabs style*/
+$_buttonTabBorderColor_ = #146eab;
+$_buttonTabFontColor_ = #ffffff;
+$_buttonTabBackgroundColor_ = #12649c;
+
+/*Links color*/
+$_linkColor_ = #003b7a;
+
+/******************************************************************************************************/
+/***************************************************CommonStyles***************************************/
+/******************************************************************************************************/
+
+/*<modules/CouponsFeatured/default/styles/mod-coupons-featured.css>*/
+/*Structure background color*/
+.mod-coupons-featured .header,
+.mod-coupons-featured .content {
+	background: $_boxBackgroundColorDark_;
+}
+/*Box background color*/
+.mod-coupons-featured .content .offers .contact-form,
+.mod-coupons-featured .content .print-note {
+	background: $_boxBackgroundColor_;
+}
+/*Coupon Category and Step box color*/
+.mod-coupons-featured .coupon .category {
+	color: $_priceColor_;
+}
+.mod-coupons-featured .content .step {
+	background: $_priceColor_;
+}
+/*</modules/CouponsFeatured/default/styles/mod-coupons-featured.css>*/
+
+/**************************************************************************/
+
+/*<modules/DepartmentBox/default/styles/mod-department-box.css>*/
+.mod-department-box {
+	background: $_boxBackgroundColor_;
+}
+.mod-department-box .info-window .info-window-content .staff .info .phone {
+	color: $_priceColor_;
+}
+/*</modules/DepartmentBox/default/styles/mod-department-box.css>*/
+
+/**************************************************************************/
+
+/*<modules/MultiDealerContactBox/default/styles/mod-multi-dealer-contact-box.css>*/
+.mod-multi-dealer-contact-box {
+	background: $_boxBackgroundColor_;
+}
+
+.mod-multi-dealer-contact-box .tooltip {
+background:none repeat scroll 0 0 $_boxBackgroundColor_;
+border: 2px solid $_boxBackgroundColorDark_;
+}
+.mod-multi-dealer-contact-box .tooltip .main_phone {
+color:$_priceColor_;
+}
+/*</modules/MultiDealerContactBox/default/styles/mod-multi-dealer-contact-box.css>*/
+
+/**************************************************************************/
+
+/*<modules/StaffBox/default/styles/mod-staff-box.css>*/
+.mod-staff-box  {
+background:none repeat scroll 0 0 $_boxBackgroundColor_;
+}
+.mod-staff-box .info-window .info-window-content .staff .info .phone {
+color:$_priceColor_;
+}
+/*</modules/StaffBox/default/styles/mod-staff-box.css>*/
+
+/**************************************************************************/
+
+/*<modules/MultiDepartmentBox/default/styles/mod-multi-department-box.css>*/
+.mod-multi-department-box  {
+	background: none repeat scroll 0 0 $_boxBackgroundColor_;
+}
+.mod-multi-department-box .info-window .info-window-content .staff .info .phone {
+	color: $_priceColor_;
+}
+.mod-multi-department-box .operation-hours-box .title {
+	color: $_priceColor_;
+}
+.mod-multi-department-box .tooltip {
+	background: none repeat scroll 0 0 $_boxBackgroundColor_;
+	border: 2px solid $_boxBackgroundColorDark_;
+}
+/*</modules/MultiDepartmentBox/default/styles/mod-multi-department-box.css>*/
+
+/**************************************************************************/
+
+/*<modules/LoanCalculator/theme1/styles/mod-loan-calculator.css>*/
+.mod-loan-calculator-theme1 .heading {
+	background: none repeat scroll 0 0 $_boxBackgroundColorDark_;
+}
+.mod-loan-calculator-theme1 {
+	background: none repeat scroll 0 0 $_boxBackgroundColorDark_;
+}
+.mod-loan-calculator-theme1 .formBlock .box {
+	border-top: 1px solid $_boxBackgroundColorDark_;
+}
+.mod-loan-calculator ul.tabs a:hover {
+    background-position: 0 28px;   
+}
+.mod-loan-calculator ul.tabs a { 
+    background: url("/public/images/grad_sml.gif") repeat scroll  transparent;
+}
+/*</modules/LoanCalculator/theme1/styles/mod-loan-calculator.css>*/
+
+/**************************************************************************/
+
+/*<components/OurTeam/default/styles/com-our-team.css>*/
+.com-our-team ul.tabs a:hover {
+    background-position: 0 28px;   
+}
+.com-our-team ul.tabs a { 
+    background: url("/public/images/grad_sml.gif") repeat scroll  transparent;
+}
+/*</components/OurTeam/default/styles/com-our-team.css>*/
+
+/**************************************************************************/
+
+/*<components/Showroom/default/styles/com-showroom.css>*/
+.com-showroom ul.tabs a:hover {
+    background-position: 0 28px;   
+}
+.com-showroom ul.tabs a { 
+    background: url("/public/images/grad_sml.gif") repeat scroll  transparent;
+	border: 1px solid $_buttonTabBorderColor_;
+}
+/*</components/Showroom/default/styles/com-showroom.css>*/
+
+/**************************************************************************/
+
+/*<components/InventoryListing/default/styles/com-inventory-listing.css>*/
+.c-paginator .paginator-button {
+	background: url("/public/images/grad_sml.gif") repeat scroll $_buttonTabBackgroundColor_;
+	border: 1px solid $_buttonTabBorderColor_;
+	color: $_buttonTabFontColor_;
+}
+.c-paginator .paginator-button:hover{
+    background-position: 0 28px;
+}
+.c-paginator .current {
+	background: none repeat scroll 0 0 transparent;
+}
+
+.c-paginator .paginator-button-next, .c-paginator .paginator-button-prev {
+	background: url("/public/images/grad_sml.gif") repeat scroll  $_buttonTabBackgroundColor_;
+	border: 1px solid $_buttonTabBorderColor_;
+	color: $_buttonTabFontColor_;
+}
+.c-paginator .paginator-button-next:hover, .c-paginator .paginator-button-prev:hover {
+	background-position: 0 28px;
+}
+.c-paginator .paginator-button a,
+.c-paginator .paginator-button-next a,
+.c-paginator .paginator-button-prev a {
+	display: block;
+}
+.com-inventory-listing .products-heading {
+	background: none repeat scroll 0 0 $_boxBackgroundColorDark_;
+}
+.com-inventory-listing .product {
+	background:none;
+	border-top: 2px solid $_boxBackgroundColorDark_;
+}
+.com-inventory-listing .product .info .price-block .price {
+	color: $_priceColor_;
+}
+/*</components/InventoryListing/default/styles/com-inventory-listing.css>*/
+
+/*<components/InventoryListing/facebook2/styles/com-inventory-listing.css>*/
+.com-inventory-listing .product .info .details .specification {
+	min-width: 345px;
+}
+/*</components/InventoryListing/facebook2/styles/com-inventory-listing.css>*/
+
+/**************************************************************************/
+
+/*<modules/VehicleEquipment/default/styles/mod-vehicle-equipment.css>*/
+.mod-vehicle-equipment ul.tabs a {
+    background: url("/public/images/grad_sml.gif") repeat scroll $_buttonTabBackgroundColor_;
+    border:1px solid $_buttonTabBorderColor_;
+}
+.mod-vehicle-equipment ul.tabs a:hover {
+    background-position: 0 28px;
+}
+/*</modules/VehicleEquipment/default/styles/mod-vehicle-equipment.css>*/
+
+/**************************************************************************/
+
+/*<modules/VehicleMedia/default/styles/mod-vehicle-media.css>*/
+.mod-vehicle-media  {
+	background: none repeat scroll 0 0 $_boxBackgroundColorDark_;
+}
+.mod-vehicle-media a.mediaButton {
+    border-color: $_buttonTabBorderColor_;
+}
+/*</modules/VehicleMedia/default/styles/mod-vehicle-media.css>*/
+
+/**************************************************************************/
+
+/*************************************************************/
+
+/*<modules/VehicleInfo/default/styles/mod-vehicle-info.css>*/
+.mod-vehicle-info .price, .mod-vehicle-info .price-title {
+	color: $_priceColor_;
+}
+/*</modules/VehicleInfo/default/styles/mod-vehicle-info.css>*/
+
+/*************************************************************/
+
+/*<modules/StaffBox/theme1/styles/mod-staff-box.css>*/
+.mod-staff-box {
+	background-color: $_boxBackgroundColor_;
+}
+.mod-staff-box .info-window .info-window-content .staff .info .phone {
+	color: $_priceColor_;
+}
+/*</modules/StaffBox/theme1/styles/mod-staff-box.css>*/
+
+/*************************************************************/
+
+/*<modules/SimilarVehicles/default/styles/mod-similar-vehicles.css>*/
+.mod-similar-vehicles .vehicles-row .item .item-description .item-price {
+	color: $_priceColor_;
+}
+/*</modules/SimilarVehicles/default/styles/mod-similar-vehicles.css>*/
+
+/*************************************************************/
+
+/*<modules/FormGetAQuote/theme1/styles/mod-form-get-a-quote.css>*/
+
+.mod-form-get-a-quote {
+background:none repeat scroll 0 0 $_boxBackgroundColor_;
+
+}
+/*</modules/FormGetAQuote/theme1/styles/mod-form-get-a-quote.css>*/
+
+/**************************************************************************/
+
+/*<modules/FormContactUs/default/styles/mod-form-contact-us.css>*/
+.mod-form-contact-us .dealer-info {
+	background:  $_boxBackgroundColorDark_;
+}
+.mod-form-contact-us .direction-form {
+	background: $_boxBackgroundColorDark_;
+}
+/*</modules/FormContactUs/default/styles/mod-form-contact-us.css>*/
+
+/*<modules/ShoppingTools/default/styles/mod-shopping-tools.css>*/
+.mod-shopping-tools {
+	background-color: $_boxBackgroundColorDark_;
+}
+.mod-shopping-tools ul.mod-st-buttons li {
+    background: url("/public/images/grad_sml.gif") repeat scroll $_buttonTabBackgroundColor_ !important;
+    border: 1px solid $_buttonTabBorderColor_;
+    margin: 0 0 1px;
+    _line-height: 20px;
+    *line-height: 20px;
+}
+.mod-shopping-tools ul.mod-st-buttons li span{
+    display: inline;
+    padding: 0 0 3px 28px;
+}
+.mod-shopping-tools ul.mod-st-buttons li a {
+    display: block;
+    padding: 0 0 0 3px;
+}
+.mod-shopping-tools ul.mod-st-buttons li.windowSticker a span {
+    background: url("/public/images/icons/print.png") 0 0 no-repeat;
+    _background: none;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/public/images/icons/print.png', sizingMethod='crop');
+}
+.mod-shopping-tools ul.mod-st-buttons li.requestAQuote a span {
+    background: url("/public/images/icons/usdollar.png") 0 0 no-repeat;
+    _background: none;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/public/images/icons/usdollar.png', sizingMethod='crop');
+}
+.mod-shopping-tools ul.mod-st-buttons li.scheduleTestdrive a span {
+    background: url("/public/images/icons/test-drive.png") 0 0 no-repeat;
+    _background: none;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/public/images/icons/test-drive.png', sizingMethod='crop');
+}
+.mod-shopping-tools ul.mod-st-buttons li.buildAVehicle a span {
+    background: url("/public/images/icons/build.png") 0 0 no-repeat;
+    _background: none;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/public/images/icons/build.png', sizingMethod='crop');
+}
+.mod-shopping-tools ul.mod-st-buttons li.emailFriend a span {
+    background: url("/public/images/icons/email.png") 0 0 no-repeat;
+    _background: none;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/public/images/icons/email.png', sizingMethod='crop');
+}
+/*</modules/ShoppingTools/default/styles/mod-shopping-tools.css>*/
+
+/**************************************************************************/
+
+/*<modules/FinancingTools/default/styles/mod-financing-tools.css>*/
+.mod-financing-tools {
+	background-color: $_boxBackgroundColorDark_;
+}
+.mod-financing-tools ul.mod-ft-buttons li {
+    background: url("/public/images/grad_sml.gif") repeat scroll  transparent !important;
+    border: 1px solid $_buttonTabBorderColor_;
+    margin: 0 0 1px;
+    _line-height: 20px;
+    *line-height: 20px;
+}
+.mod-financing-tools ul.mod-ft-buttons li span{
+    display: inline;
+    padding: 3px 0 3px 28px;
+    _padding: 0 0 3px 28px;
+    *padding: 0 0 3px 28px;
+}
+.mod-financing-tools ul.mod-ft-buttons li a {
+    display: block;
+    padding: 0 0 0 3px;
+}
+.mod-financing-tools ul.mod-ft-buttons li.calculator a span {
+    background: url("/public/images/icons/trade-in.png") 0 0 no-repeat;
+    _background: none;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/public/images/icons/trade-in.png', sizingMethod='crop');
+}
+.mod-financing-tools ul.mod-ft-buttons li.getApproved a span {
+    background: url("/public/images/icons/approved.png") 0 0 no-repeat;
+    _background: none;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/public/images/icons/approved.png', sizingMethod='crop');
+}
+/*</modules/FinancingTools/default/styles/mod-financing-tools.css>*/
+
+/**************************************************************************/
+
+/*<modules/DepartmentBoxefault/styles/mod-department-box.css>*/
+.mod-department-box {
+	background: none repeat scroll 0 0 $_boxBackgroundColor_;
+}
+.mod-department-box .info-window .info-window-content .staff .info .phone {
+	color: $_priceColor_;
+}
+/*<modules/DepartmentBoxefault/styles/mod-department-box.css>*/
+
+/**************************************************************************/
+
+/*<components/ViewVehicle/default/styles/com-view-vehicle.css>*/
+.com-view-vehicle .c-product-details .c-product-name {
+	background: $_boxBackgroundColorDark_;
+}
+/*</components/ViewVehicle/default/styles/com-view-vehicle.css>*/
+
+/******************************************************************************************************/
+/***************************************************Home Page Design***********************************/
+/******************************************************************************************************/
+
+/*<modules/Menu/theme2/styles/mod-menu.css>*/
+.mod-menu {
+	border-bottom: 2px solid #000000;
+	height: 34px;
+}
+.mod-menu .menu-ul {
+	border-bottom: 3px solid $_buttonTabBorderColor_;
+	height: 31px;
+}
+.mod-menu li.lev-1 {
+	width: 123px;
+	background: none;
+}
+.mod-menu a.lev-1 {
+	padding: 9px 0 7px;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #ffffff;
+}
+.mod-menu a.lev-1:hover, .mod-menu li.lev-1:hover a.lev-1, .mod-menu li.over a.lev-1 {
+	background: $_buttonTabBackgroundColor_ url("/public/images/grad_sml.gif") 0 0 repeat-x;
+	color: $_buttonTabFontColor_;
+	border: 1px solid $_buttonTabBorderColor_;
+	border-bottom: 3px solid $_buttonTabBorderColor_;
+	padding: 8px 0 4px;
+}
+/*</modules/Menu/theme2/styles/mod-menu.css>*/
+
+/**************************************************************************/
+
+/*<components/HomePage/default/styles/com-home-page.css>*/
+.com-home-page .home-banner {
+	position: relative;
+}
+.com-home-page .cols {
+    overflow: hidden;
+    padding: 12px 8px 18px;
+}
+.com-home-page .cols .col {
+    background: $_boxBackgroundColorDark_;
+    border-top: 3px solid $_buttonTabBorderColor_;
+    float: left;
+    width: 316px;
+    margin: 0 0 10px 8px;
+    height: 207px;
+    overflow: hidden;
+}
+.com-home-page .cols .row-2 {
+	background: none;
+	border: none;
+}
+.com-home-page .cols .col-1-1,
+.com-home-page .cols .col-2-1 {
+    margin-left: 0;
+}
+.com-home-page .box {
+    
+}
+.com-home-page .col .heading {
+    padding: 7px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #ffffff;
+}
+.com-home-page .row-2 .heading {
+	color: #000000;
+}
+.com-home-page .box .inner-box {
+    padding: 0 10px;
+}
+.com-home-page .box a:hover {
+    text-decoration: underline;
+}
+.com-home-page .box .image {
+    width: 108px;
+    float: left;
+}
+.com-home-page .box .text {
+    margin-left: 108px;
+}
+.com-home-page .box .text .title {
+    font-size: 14px;
+    font-weight: bold;
+}
+.com-home-page .box .links-list {
+    margin: 10px 0;
+    padding: 0;
+}
+.com-home-page .box .links-list a {
+    background: transparent url("/public/images/arrow-bullet.gif") 0 center no-repeat;
+    padding-left: 8px;
+}
+.com-home-page .box .links-list a:hover {
+    text-decoration: underline;
+}
+/*</components/HomePage/default/styles/com-home-page.css>*/
+
+/**************************************************************************/
+
+/*<modules/Slideshow/default/styles/mod-slideshow.css>*/
+.mod-slideshow .images-list {
+	height: 326px;
+}
+.mod-slideshow .images-list .text-box {
+	display: none;
+}
+/*</modules/Slideshow/default/styles/mod-slideshow.css>*/
+
+/**************************************************************************/
+
+/*<modules/YoutubeVideo/default/styles/mod-youtube-video.css>*/
+.mod-youtube-video {
+	z-index: 2;
+	top: 20px;
+	right: 20px;
+	background: none;
+}
+/*</modules/YoutubeVideo/default/styles/mod-youtube-video.css>*/
+
+/**************************************************************************/
+
+/*<modules/Lineup/theme2/styles/mod-lineup.css>*/
+.mod-lineup {
+	padding: 0 8px;
+}
+/*</modules/Lineup/theme2/styles/mod-lineup.css>*/
+
+/**************************************************************************/
+
+/*<modules/Tools/theme1/styles/mod-tools.css>*/
+.mod-tools {
+	padding: 20px 0 15px;
+}
+/*</modules/Tools/theme1/styles/mod-tools.css>*/
+
+/**************************************************************************/
+
+/*<modules/KeepInTouch/home/styles/mod-keep-in-touch.css>*/
+.mod-keep-in-touch {
+	overflow: hidden;
+	float: none;
+	width: auto;
+	color: #ffffff;
+	padding: 0;
+	margin: 0;
+}
+/*</modules/KeepInTouch/home/styles/mod-keep-in-touch.css>*/
+
+/**************************************************************************/
+
+/*<modules/Rotator/default/styles/mod-rotator.css>*/
+.mod-rotator {
+	background: none;
+	border: none;
+	float: none;
+	width: auto;
+	margin: 0;
+}
+.mod-rotator .heading {
+	background: none;
+}
+/*</modules/Rotator/default/styles/mod-rotator.css>*/
+
+/**************************************************************************/
+
+/*<modules/FeaturedVehicles/default/styles/mod-featured-vehicles.css>*/
+.mod-featured-vehicles {
+	background: none;
+	border: none;
+	float: none;
+	width: auto;
+	margin: 0;
+}
+/*</modules/FeaturedVehicles/default/styles/mod-featured-vehicles.css>*/
+
+/**************************************************************************/
+
+/*<modules/BlogBox/default/styles/mod-blog-box.css>*/
+.mod-blog-box {
+	background: none;
+	border: none;
+	float: none;
+	width: auto;
+	margin: 0;
+}
+.mod-blog-box .item a {
+	color: $_linkColor_;
+}
+/*</modules/BlogBox/default/styles/mod-blog-box.css>*/
+
+/**************************************************************************/
+
+/*<modules/Form2/getApprovedDefault/styles/mod-form2-get-approved.css>*/
+.mod-form2-get-approved {
+	margin:0 10px 13px;
+	width:700px;	
+}
+.mod-form2-get-approved .field .label {
+  width: 117px;
+}
+.mod-form2-get-approved fieldset.long.pad .field .label {width:130px;padding-right:5px;}
+.mod-form2-get-approved .formBlock .formContent fieldset.long.pad .field.smle2 {width:100px;}
+.mod-form2-get-approved-facebook {
+	width:520px;
+	margin:0px;
+}
+.mod-form2-get-approved .formBlock .formContent .cj_home_type {padding-top:20px;padding-bottom:3px}
+.mod-form2-get-approved .heading-facebook {
+	height:110px;
+	line-height:17px;
+	padding:0px 0px 0px 8px;
+}
+.mod-form2-get-approved .heading-facebook .description-facebook {
+	width:370px;
+	float:left;
+}
+.mod-form2-get-approved .heading-facebook .ssl-certificate-facebook {
+	float:right;
+	width:134px;
+}
+.mod-form2-get-approved .parentBox {
+	height:570px;
+	margin-left:0px;
+	margin-right:0px;	
+}
+.mod-form2-get-approved .blockBox {
+	width:700px;
+	height:770px;
+	float:left;
+	margin: 0px;
+	clear: none;
+}
+.mod-form2-get-approved .blockBox.st {
+	height:10px;
+}
+.mod-form2-get-approved .blockBox .buttons {
+	margin-top:10px;
+}
+.mod-form2-get-approved .blockBox .next, 
+.mod-form2-get-approved .blockBox .previous {
+	border:1px solid #666;
+	background:#ccc;
+	color:#666;
+	font-family:Arial;
+	font-size:12px;
+	width:100px;
+	height:25px;
+	cursor:pointer;
+	line-height:25px;
+	text-align:center;
+}
+.mod-form2-get-approved .blockBox .next:hover {
+	border:1px solid #00C;
+	background:#B3CAFF;
+	color:#00C;
+}
+.mod-form2-get-approved .blockBox.st .next:hover,
+.mod-form2-get-approved .blockBox.st .next, 
+.mod-form2-get-approved .blockBox.st .previous {
+	border:none;
+	background:none;
+}
+.mod-form2-get-approved .blockBox .left {
+	float:left;
+}
+.mod-form2-get-approved .blockBox .right {
+	float:right;
+	margin-right:20px
+}
+
+.mod-form2-get-approved .formBlock fieldset.second {
+	margin-left:350px;
+	width:330px;
+}
+.mod-form2-get-approved .formBlock fieldset.second2 {
+	margin-left:350px;
+	width:330px;
+}
+.mod-form2-get-approved .formBlock .formContent .field input.text {
+	width:191px;
+}
+.mod-form2-get-approved .formBlock .formContentClear {
+	height:auto;
+	clear:none;
+}
+.mod-form2-get-approved .field-left {
+	padding-left:0px;
+	position:relative;
+	text-align:left;
+	margin: 0 0 4px;
+}
+.mod-form2-get-approved .field-right {
+	padding-left:0px;
+	position:relative;
+	text-align:right;
+	margin: 0 0 4px;
+}
+.mod-form2-get-approved .formBlock fieldset.first-one {
+	float:left;
+	padding-left:0px;
+	width:250px;
+}
+.mod-form2-get-approved .formBlock fieldset.second-two {
+	float:right;
+	padding:10px 3px;
+	width:250px;
+}
+.mod-form2-get-approved .field-left .label,
+.mod-form2-get-approved .field-right .label {
+	display:inline;
+	float:left;
+	margin-left:0px;
+	padding-left:5px;
+	text-align:left;
+	width:112px;
+}
+.mod-form2-get-approved .field-left input.text,
+.mod-form2-get-approved .field-right input.text,
+.mod-form2-get-approved .field-right input.state {
+	width:125px;
+}
+.mod-form2-get-approved .field-right  input.j_dphone1,
+.mod-form2-get-approved .field-right  input.j_dphone2,
+.mod-form2-get-approved .field-right  input.j_ephone1,
+.mod-form2-get-approved .field-right  input.j_ephone2,
+.mod-form2-get-approved .field-right  input.dphone1,
+.mod-form2-get-approved .field-right  input.dphone2,
+.mod-form2-get-approved .field-right  input.ephone1,
+.mod-form2-get-approved .field-right  input.ephone2 {
+	width:23px;
+}
+.mod-form2-get-approved .field-right  input.ephone3,
+.mod-form2-get-approved .field-right  input.dphone3,
+.mod-form2-get-approved .field-right  input.j_dphone3,
+.mod-form2-get-approved .field-right  input.j_ephone3 {
+	width:60px;
+}
+.mod-form2-get-approved .success .success-image-facebook {
+	margin-left:0px;
+	text-align:right;
+}
+.mod-form2-get-approved .formBlock .formContent .field input.dphone1, 
+.mod-form2-get-approved .formBlock .formContent .field input.dphone2, 
+.mod-form2-get-approved .formBlock .formContent .field input.prv-cphone1, 
+.mod-form2-get-approved .formBlock .formContent .field input.prv-cphone2, 
+.mod-form2-get-approved .formBlock .formContent .field input.mphone1, 
+.mod-form2-get-approved .formBlock .formContent .field input.mphone2,
+.mod-form2-get-approved .formBlock .formContent .field input.ephone1, 
+.mod-form2-get-approved .formBlock .formContent .field input.ephone2,
+.mod-form2-get-approved .formBlock .formContent .field input.hphone1,
+.mod-form2-get-approved .formBlock .formContent .field input.hphone2,
+.mod-form2-get-approved .formBlock .formContent .field input.cphone1, 
+.mod-form2-get-approved .formBlock .formContent .field input.cphone2,
+.mod-form2-get-approved .formBlock .formContent .field input.wphone1, 
+.mod-form2-get-approved .formBlock .formContent .field input.wphone2,
+.mod-form2-get-approved .formBlock .formContent .field input.state, 
+.mod-form2-get-approved .formBlock .formContent .field input.dl_state,
+.mod-form2-get-approved .formBlock .formContent .field input.wstate, 
+.mod-form2-get-approved .formBlock .formContent .field input.j_dphone1, 
+.mod-form2-get-approved .formBlock .formContent .field input.j_dphone2, 
+.mod-form2-get-approved .formBlock .formContent .field input.j_prv-cphone1, 
+.mod-form2-get-approved .formBlock .formContent .field input.j_prv-cphone2,
+.mod-form2-get-approved .formBlock .formContent .field input.j_mphone1, 
+.mod-form2-get-approved .formBlock .formContent .field input.j_mphone2,
+.mod-form2-get-approved .formBlock .formContent .field input.j_ephone1, 
+.mod-form2-get-approved .formBlock .formContent .field input.j_ephone2, 
+.mod-form2-get-approved .formBlock .formContent .field input.j_hphone1, 
+.mod-form2-get-approved .formBlock .formContent .field input.j_hphone2, 
+.mod-form2-get-approved .formBlock .formContent .field input.j_cphone1, 
+.mod-form2-get-approved .formBlock .formContent .field input.j_cphone2, 
+.mod-form2-get-approved .formBlock .formContent .field input.j_wphone1, 
+.mod-form2-get-approved .formBlock .formContent .field input.j_wphone2, 
+.mod-form2-get-approved .formBlock .formContent .field input.j_mphone1, 
+.mod-form2-get-approved .formBlock .formContent .field input.j_mphone2,
+.mod-form2-get-approved .formBlock .formContent .field input.j_state,
+.mod-form2-get-approved .formBlock .formContent .field input.j_wstate,
+.mod-form2-get-approved .formBlock .formContent .field input.j_dl_state,
+.mod-form2-get-approved .formBlock .formContent .field input.employer_phone1,
+.mod-form2-get-approved .formBlock .formContent .field input.employer_phone2,
+.mod-form2-get-approved .formBlock .formContent .field input.j_employer_phone1,
+.mod-form2-get-approved .formBlock .formContent .field input.j_employer_phone2,
+.mod-form2-get-approved .formBlock .formContent .field input.relative_phone1,
+.mod-form2-get-approved .formBlock .formContent .field input.j_relative_phone1,
+.mod-form2-get-approved .formBlock .formContent .field input.relative_phone2,
+.mod-form2-get-approved .formBlock .formContent .field input.j_relative_phone2,
+.mod-form2-get-approved .formBlock .formContent .field input.friend_phone1,
+.mod-form2-get-approved .formBlock .formContent .field input.j_friend_phone1,
+.mod-form2-get-approved .formBlock .formContent .field input.friend_phone2,
+.mod-form2-get-approved .formBlock .formContent .field input.j_friend_phone2
+{
+	width:42px;
+}
+.mod-form2-get-approved .formBlock .formContent .field input.dphone3,
+.mod-form2-get-approved .formBlock .formContent .field input.prv-cphone3, 
+.mod-form2-get-approved .formBlock .formContent .field input.mphone3,
+.mod-form2-get-approved .formBlock .formContent .field input.hphone3,
+.mod-form2-get-approved .formBlock .formContent .field input.ephone3, 
+.mod-form2-get-approved .formBlock .formContent .field input.cphone3,
+.mod-form2-get-approved .formBlock .formContent .field input.wphone3, 
+.mod-form2-get-approved .formBlock .formContent .field input.j_cphone3,
+.mod-form2-get-approved .formBlock .formContent .field input.j_prv-cphone3, 
+.mod-form2-get-approved .formBlock .formContent .field input.j_mphone3, 
+.mod-form2-get-approved .formBlock .formContent .field input.j_hphone3, 
+.mod-form2-get-approved .formBlock .formContent .field input.j_dphone3, 
+.mod-form2-get-approved .formBlock .formContent .field input.j_ephone3,
+.mod-form2-get-approved .formBlock .formContent .field input.j_mphone3,
+.mod-form2-get-approved .formBlock .formContent .field input.j_wphone3,
+.mod-form2-get-approved .formBlock .formContent .field input.employer_phone3,
+.mod-form2-get-approved .formBlock .formContent .field input.j_employer_phone3,
+.mod-form2-get-approved .formBlock .formContent .field input.j_relative_phone3,
+.mod-form2-get-approved .formBlock .formContent .field input.relative_phone3,
+.mod-form2-get-approved .formBlock .formContent .field input.friend_phone3,
+.mod-form2-get-approved .formBlock .formContent .field input.j_friend_phone3 
+{
+	width:60px;
+}
+.mod-form2-get-approved .formBlock .formContent .field input.rphone1, 
+.mod-form2-get-approved .formBlock .formContent .field input.rphone2, 
+.mod-form2-get-approved .formBlock .formContent .field input.fphone1, 
+.mod-form2-get-approved .formBlock .formContent .field input.fphone2
+{
+	width:42px;
+}
+.mod-form2-get-approved .formBlock .formContent .field input.rphone3, 
+.mod-form2-get-approved .formBlock .formContent .field input.fphone3
+{
+	width:60px;
+}
+.mod-form2-get-approved .formBlock .formContent .field #trade_in-No, .mod-form2-get-approved .formBlock .formContent .field #home_type-Family {
+    margin-left: 26px;
+}
+.mod-form2-get-approved .heading {
+	padding:25px 0 10px 8px;
+}
+.mod-form2-get-approved .box-application-type .block1 {
+	background:transparent url(/public/images/single-app.png) no-repeat 113px 0;
+	height:46px;
+	width:330px;
+}
+.mod-form2-get-approved .box-application-type .bg {
+	background:transparent url(/public/images/single-app.png) no-repeat 0 0;
+}
+.mod-form2-get-approved .box-application-type .block1 .option {
+	padding:10px 0 0 35px;
+}
+.mod-form2-get-approved .box-application-type .block1 .opedit {
+	padding:10px 0px 0px 0px;
+	margin-left:55px;
+}
+.mod-form2-get-approved .box-application-type .block2 {
+	background:transparent url(/public/images/joint-app.png) no-repeat scroll 5px 0;
+	height:51px;
+	margin-left:340px;
+	padding-top:10px;
+}
+.mod-form2-get-approved .box-application-type .block2edit {
+	margin-left:255px;
+}
+.mod-form2-get-approved .box-application-type .block2 .option {
+	margin-left:68px;
+	width:180px;
+}
+.mod-form2-get-approved .box-application-type .block2 .note {
+	padding:4px 0 0 68px;
+}
+.mod-form2-get-approved .formContent .prev-address {
+	padding-bottom:15px;
+}
+.mod-form2-get-approved .formContent input.prev_address {
+	padding-bottom:2px
+}
+.mod-form2-get-approved .formContent .prev-address input{
+	margin-top:12px;
+}
+.mod-form2-get-approved .formContent .clandlord_mortgage {
+	padding-bottom:10px;
+}
+.mod-form2-get-approved .formContent .cif_mortgage {
+	padding-bottom:20px;
+}
+.mod-form2-get-approved .formContent .cif_mortgage input{
+	margin-top:10px;
+}
+.mod-form2-get-approved .formBlock .formContent .field textarea {
+    width: 191px;
+    height: 150px;
+}
+.mod-form2-get-approved .formBlock .comment{
+	height: 150px;
+	padding: 16px 10px;
+	border: 1px solid #6e7982;
+}
+.mod-form2-get-approved .formBlock .comment textarea{
+height:100px;
+width:650px;
+}
+
+.mod-form2-get-approved.johnson .privacy ol,
+.mod-form2-get-approved.johnson .privacy ul {
+	padding: 25x;}
+.mod-form2-get-approved.johnson .privacy ol li {
+	list-style-type: decimal;}
+.mod-form2-get-approved.johnson .privacy ul li {
+	list-style-type: disc;}
+
+.mod-form2-get-approved .content .logo {
+background-color:#000;
+text-align:center;
+}
+div.text.toppad2 {padding-top:20px;}
+div.text.toppad {padding-top:10px;}
+.mod-form2-get-approved .formBlock .formContent .field.half  input[type=text]{width:95px;}
+.mod-form2-get-approved .formBlock .formContent .field.small  input[type=text]{width:42px;}
+.mod-form2-get-approved .formBlock .formContent .field.toppad  {margin-top:10px;}
+.mod-form2-get-approved .formBlock .formContent .field.padd  {padding-top:5px;padding-bottom:5px}
+.mod-form2-get-approved .formBlock .formContent .field.toppad2 {margin-top:20px;}
+.mod-form2-get-approved .formBlock .formContent .field textarea.employment_status,
+.mod-form2-get-approved .formBlock .formContent .field textarea.j_employment_status,
+.mod-form2-get-approved .formBlock .formContent .field textarea.additional_comments,
+.mod-form2-get-approved .formBlock .formContent .field textarea.j_additional_comments
+{height:55px;}
+.mod-form2-get-approved .formBlock .formContent div.text {margin:5px;}
+.mod-form2-get-approved .formBlock .formContent div.text.pad {padding-left:50px;}
+
+.mod-form2-get-approved .formBlock .formContent .field.ccurrent_job_year,
+.mod-form2-get-approved .formBlock .formContent .field.cadd_year,
+.mod-form2-get-approved .formBlock .formContent .field.cprv_job_year,
+.mod-form2-get-approved .formBlock .formContent .field.cprevadd_years,
+.mod-form2-get-approved .formBlock .formContent .field.cj_current_job_year,
+.mod-form2-get-approved .formBlock .formContent .field.cj_add_year,
+.mod-form2-get-approved .formBlock .formContent .field.cj_prv_job_year,
+.mod-form2-get-approved .formBlock .formContent .field.cj_prevadd_years,
+.mod-form2-get-approved .formBlock .formContent .field.cyears,
+.mod-form2-get-approved .formBlock .formContent .field.cj_years,
+.mod-form2-get-approved .formBlock .formContent .field.cprior_years,
+.mod-form2-get-approved .formBlock .formContent .field.cj_prior_years
+ {float:left;}
+.mod-form2-get-approved .formBlock .formContent .field.smle input,
+.mod-form2-get-approved .formBlock .formContent .field.smle2 input
+ {width:60px;}
+.mod-form2-get-approved .formBlock .formContent .field.smle2 {margin-left:203px;width:78px;padding:0px 0px 0px 50px;overflow:hidden}
+.mod-form2-get-approved .field.smle2 label {width;70px;}
+.mod-form2-get-approved-custom {height:1200px} 
+.mod-form2-get-approved .formBlock fieldset.long.pad {padding-left:30px;width:600px}
+.mod-form2-get-approved .formBlock fieldset .field textarea#additional_info.textarea,
+.mod-form2-get-approved .formBlock fieldset .field textarea#j_additional_info.textarea
+ {
+height:100px;
+}
+.mod-form2-get-approved .formBlock .formContent .field #home_type-Own
+ {
+margin-left:10px;
+}
+.mod-form2-get-approved .formBlock .formContent .field input[type=checkbox] {
+width:20px;
+}
+
+/* CA FOR HONDA */
+.mod-form2-get-approved.honda .formBlock .formContent,
+.mod-form2-get-approved.honda .formBlock .privacy {
+border:1px #E46570 solid;
+}
+.mod-form2-get-approved.honda .box-application-type,
+.mod-form2-get-approved.honda .box-terms,
+.mod-form2-get-approved.honda .formBlock .block-head
+ {
+background-color:#FCEFF0;
+border-color:#E46570;
+}
+.mod-form2-get-approved .box-hs{
+	display: none;
+}
+.mod-form2-get-approved.pre .field.cpurchase_type {display:none;}
+
+.mod-form2-get-approved .field.nolabel label.label {display:none;}
+.mod-form2-get-approved .field.nolabel {padding-left:10px}
+.mod-form2-get-approved .formBlock .formContent .field.nolabel textarea {
+height:45px;
+width:303px;
+}
+.mod-form2-get-approved .comments textarea#comments {
+  width:670px;
+  height:180px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.mod-form2-get-approved.sexy-victory {
+	color: black;
+	margin: 0;
+	padding: 20px 10px 10px;}
+.mod-form2-get-approved.sexy-victory .header h1,
+.mod-form2-get-approved.sexy-victory .header p {
+	float: left;
+	width: 500px;}
+.mod-form2-get-approved.sexy-victory .header p {
+	float: left;
+	line-height: 1.5em;
+	padding: 0;}
+.mod-form2-get-approved.sexy-victory .ssl-certificate {
+	padding: 30px 0 0 550px;
+	*padding: 30px 0 0;}
+.mod-form2-get-approved.sexy-victory form {
+	clear: both;}
+.mod-form2-get-approved.sexy-victory fieldset {
+	border-top: 1px solid #b8b8b8;
+	clear: both;
+	padding: 15px 5px;}
+.mod-form2-get-approved.sexy-victory fieldset.application-type {
+	border-top: none;}
+.mod-form2-get-approved.sexy-victory .question {
+	float: left;
+	padding: 30px 0 0;
+	text-align: right;
+	width: 140px;}
+.mod-form2-get-approved.sexy-victory .option {
+	/* courtesy of http://www.colorzilla.com/gradient-editor/ */
+	background: #f7f7f7; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f7f7f7 0%, #efefef 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#efefef)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f7f7f7 0%,#efefef 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f7f7f7 0%,#efefef 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f7f7f7 0%,#efefef 100%); /* IE10+ */
+	background: linear-gradient(top,  #f7f7f7 0%,#efefef 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
+	border: 3px solid #e4e4e4;
+	float: left;
+	margin-left: 20px;}
+.mod-form2-get-approved.sexy-victory .option.active {
+	/* courtesy of http://www.colorzilla.com/gradient-editor/ */
+	background: #ade733; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ade733 0%, #7bb500 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ade733), color-stop(100%,#7bb500)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ade733 0%,#7bb500 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ade733 0%,#7bb500 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ade733 0%,#7bb500 100%); /* IE10+ */
+	background: linear-gradient(top,  #ade733 0%,#7bb500 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ade733', endColorstr='#7bb500',GradientType=0 ); /* IE6-9 */
+	border: 3px solid #7cb602;}
+.mod-form2-get-approved.sexy-victory .option label {
+	background: url('/public/images/applicant-icon-background.png') no-repeat;
+	display: block;
+	font-weight: bold;
+	height: 65px;
+	padding: 18px 5px 0 70px;
+	width: 170px;}
+.mod-form2-get-approved.sexy-victory .option.single label {
+	background-position: 8px 14px;}
+.mod-form2-get-approved.sexy-victory .option.single.active label {
+	background-position: 8px -129px;}
+.mod-form2-get-approved.sexy-victory .option.joint label {
+	background-position: 8px -273px;}
+.mod-form2-get-approved.sexy-victory .option.joint.active label {
+	background-position: 8px -416px;}
+.mod-form2-get-approved.sexy-victory .option label .subtext {
+	display: block;
+	font-size: 10px;
+	font-weight: normal;}
+.mod-form2-get-approved.sexy-victory .option input {
+	display: none;}
+.mod-form2-get-approved.sexy-victory .fieldset-header {
+	padding: 5px 20px 20px;}
+.mod-form2-get-approved.sexy-victory h2 {
+	display: inline-block;
+	float: left;
+	font-size: 18px;
+	margin-right: 5px;}
+.mod-form2-get-approved.sexy-victory .required {
+	color: red;
+	display: block;
+	font-size: 11px;
+	font-style: italic;
+	margin-top: 9px;}
+.mod-form2-get-approved.sexy-victory .field {
+	clear: both;
+	margin: 1px 0;
+	padding: 2px 0 1px;}
+.mod-form2-get-approved.sexy-victory .field .label {
+	border-top: 1px solid #eaeaea;
+	display: block;
+	float: left;
+	margin: -2px 0 0;
+	padding: 8px 15px 5px 5px;
+	text-align: right;
+	width: 150px;}
+.mod-form2-get-approved.sexy-victory .field.cpurchase_type label {
+	border-top: none;}
+.mod-form2-get-approved.sexy-victory .field input[type="text"],
+.mod-form2-get-approved.sexy-victory .field select {
+	background: #f1f1f1;
+	border: none;
+	display: inline-block;
+	font-size: 14px;
+	margin: 0 10px 0 2px;
+	padding: 7px 5px;
+	width: 235px;}
+.mod-form2-get-approved.sexy-victory .field input[type="text"].jsError,
+.mod-form2-get-approved.sexy-victory .field select.jsError {
+	padding: 6px 4px;}
+.mod-form2-get-approved.sexy-victory .field.cheader {
+	padding: 2px 0 1px 170px;}
+.mod-form2-get-approved.sexy-victory .field.cheader p {
+	color: #676767;
+	display: inline-block;
+	font-style: italic;
+	margin: 0 10px 0 2px;
+	padding: 0 5px;
+	width: 235px;}
+.mod-form2-get-approved.sexy-victory .field.cdob select {
+	margin: 0 0 0 2px;}
+.mod-form2-get-approved.sexy-victory .field.cdob select.dob_month,
+.mod-form2-get-approved.sexy-victory .field.cdob select.j_dob_month {
+	width: 110px;}
+.mod-form2-get-approved.sexy-victory .field.cdob select.dob_day,
+.mod-form2-get-approved.sexy-victory .field.cdob select.j_dob_day {
+	width: 50px;}
+.mod-form2-get-approved.sexy-victory .field.cdob select.dob_year,
+.mod-form2-get-approved.sexy-victory .field.cdob select.j_dob_year {
+	margin-right: 15px;
+	width: 70px;}
+.mod-form2-get-approved.sexy-victory .field.cdphone input,
+.mod-form2-get-approved.sexy-victory .field.cephone input {
+	margin: 0 0 0 2px;}
+.mod-form2-get-approved.sexy-victory .field.cpurchase_type label,
+.mod-form2-get-approved.sexy-victory .field.ctrade_in label,
+.mod-form2-get-approved.sexy-victory .field.chome_type label {
+	display: inline-block;
+	font-size: 13px;
+	padding: 6px 15px 5px 10px;}
+.mod-form2-get-approved.sexy-victory .field.cpurchase_type label.label,
+.mod-form2-get-approved.sexy-victory .field.ctrade_in label.label,
+.mod-form2-get-approved.sexy-victory .field.chome_type label.label {
+	padding: 8px 15px 5px 5px;}
+.mod-form2-get-approved.sexy-victory .field.cdphone input.dphone1,
+.mod-form2-get-approved.sexy-victory .field.cdphone input.j_dphone1,
+.mod-form2-get-approved.sexy-victory .field.cdphone input.dphone2,
+.mod-form2-get-approved.sexy-victory .field.cdphone input.j_dphone2,
+.mod-form2-get-approved.sexy-victory .field.cephone input.ephone1,
+.mod-form2-get-approved.sexy-victory .field.cephone input.j_ephone1,
+.mod-form2-get-approved.sexy-victory .field.cephone input.ephone2,
+.mod-form2-get-approved.sexy-victory .field.cephone input.j_ephone2 {
+	width: 50px;}
+.mod-form2-get-approved.sexy-victory .field.cdphone input.dphone3,
+.mod-form2-get-approved.sexy-victory .field.cdphone input.j_dphone3,
+.mod-form2-get-approved.sexy-victory .field.cephone input.ephone3,
+.mod-form2-get-approved.sexy-victory .field.cephone input.j_ephone3 {
+	margin-right: 45px;
+	width: 70px;}
+.mod-form2-get-approved.sexy-victory .field.cemployee_since_month select {
+	margin: 0 0 0 2px;}
+.mod-form2-get-approved.sexy-victory .field.cemployee_since_month select.employee_since_month,
+.mod-form2-get-approved.sexy-victory .field.cemployee_since_month select.j_employee_since_month {
+	width: 110px;}
+.mod-form2-get-approved.sexy-victory .field.cemployee_since_month select.employee_since_year,
+.mod-form2-get-approved.sexy-victory .field.cemployee_since_month select.j_employee_since_year {
+	margin-right: 70px;
+	width: 70px;}
+.mod-form2-get-approved.sexy-victory .field.cliving_since_month select {
+	margin: 0 0 0 2px;}
+.mod-form2-get-approved.sexy-victory .field.cliving_since_month select.living_since_month {
+	width: 110px;}
+.mod-form2-get-approved.sexy-victory .field.cliving_since_month select.living_since_year {
+	width: 70px;}
+.mod-form2-get-approved.sexy-victory #policy{
+	height:200px;
+	overflow:auto;}
+.mod-form2-get-approved.sexy-victory .privacy {
+	clear: both;
+	color: #666;
+	padding: 12px 10px;}
+.mod-form2-get-approved.sexy-victory .privacy p {
+	padding-bottom: 10px;}
+.mod-form2-get-approved.sexy-victory .agree-box {
+	/* courtesy of http://www.colorzilla.com/gradient-editor/ */
+	background: #f7f7f7; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f7f7f7 0%, #efefef 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#efefef)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f7f7f7 0%,#efefef 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f7f7f7 0%,#efefef 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f7f7f7 0%,#efefef 100%); /* IE10+ */
+	background: linear-gradient(top,  #f7f7f7 0%,#efefef 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
+	border: 3px solid #e4e4e4;
+	padding: 15px 15px 15px 20px;}
+.mod-form2-get-approved.sexy-victory .agree-box input {
+	display: block;
+	float: left;
+	margin-top: 3px;}
+.mod-form2-get-approved.sexy-victory .agree-box p {
+	display: block;
+	font-size: 13px;
+	margin-left: 30px;}
+.mod-form2-get-approved.sexy-victory .honeyspot {
+	display: none;}
+.mod-form2-get-approved.sexy-victory button.big-link {
+	/* courtesy of http://www.colorzilla.com/gradient-editor/ */
+	background: #ff9815; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ff9815 0%, #ed6101 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff9815), color-stop(100%,#ed6101)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ff9815 0%,#ed6101 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ff9815 0%,#ed6101 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ff9815 0%,#ed6101 100%); /* IE10+ */
+	background: linear-gradient(top,  #ff9815 0%,#ed6101 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9815', endColorstr='#ed6101',GradientType=0 ); /* IE6-9 */
+	border: 2px solid #ff6600;
+	color: white;
+	display: block;
+	float: right;
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 10px;
+	padding: 5px 20px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0 0 2px black;}
+.mod-form2-get-approved.sexy-victory button.big-link:hover {
+	background: #ff9815;}
+.mod-form2-get-approved.sexy-victory .success {
+	padding-bottom: 30px;}
+@font-face {
+	font-family: 'Cafeta';
+	src: url('/public/font/cafeta-webfont.eot');
+	src: url('/public/font/cafeta-webfont.eot?#iefix') format('embedded-opentype'),
+		url('/public/font/cafeta-webfont.woff') format('woff'),
+		url('/public/font/cafeta-webfont.ttf') format('truetype'),
+		url('/public/font/cafeta-webfont.svg#cafetaRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;}
+.mod-form2-get-approved.sexy-victory .success h1 {
+	background: url('/public/images/victory-success-check.png') top left no-repeat;
+	color: #0b659f;
+	font-family: Cafeta, sans-serif;
+	font-size: 72px;
+	font-weight: normal;
+	line-height: normal;
+	padding: 60px 0 25px 160px;
+	text-transform: uppercase;}
+.mod-form2-get-approved.sexy-victory .success .description {
+	width: 555px;}
+
+.mod-form2-get-approved.hwchevy .sslbox {
+margin-top:-30px;
+}
+.mod-form2-get-approved.hwchevy .heading {
+padding-top:5px;
+}
+
+.mod-form2-get-approved .ttabs ul.tabs li {
+float:left;
+margin:0px;
+padding:0px;
+margin:21px 0 0 2px;
+}
+.mod-form2-get-approved .ttabs ul.tabs {
+background:url(/public/images/bg-steps.jpg) repeat-x;
+height:60px;
+margin:0px;
+padding:0px;
+border:1px #ebebeb solid;
+}
+.mod-form2-get-approved .ttabs ul.tabs li a {
+height:60px;
+padding:20px 11px;
+font-size:13px;
+}
+.mod-form2-get-approved .ttabs ul.tabs li a.current{
+background:url(/public/images/bg-step-current.jpg) right no-repeat;
+color:#fff;
+}
+.mod-form2-get-approved .commentbig textarea.comment {
+    height: 90px;
+    margin-left: 20px;
+    padding: 16px 10px;
+    width: 630px;
+}
+.mod-form2-get-approved.steps .form-button button.img {
+background:none;
+border:0px;
+padding:0px;
+}
+.mod-form2-get-approved.steps .heading {
+padding:0 0 0 8px;
+}
+.mod-form2-get-approved.steps .box-application-type{
+  padding:5px;
+}
+.mod-form2-get-approved.steps .box-application-type .question {
+  margin-top:10px;
+}
+.mod-form2-get-approved.steps .box-terms {
+  margin-top:10px
+}
+.mod-form2-get-approved.steps ul.tabs li a {
+  background:url('/public/images/bg_steps.gif') no-repeat;
+  padding:5px 8px 5px 78px;
+  font-size:20px;
+  text-align:right;
+  line-height:10px;
+  color:#333;
+}
+.mod-form2-get-approved.steps ul.tabs li a:hover {
+  text-decoration:none;
+  cursor: pointer;
+}
+.mod-form2-get-approved.steps .ttabs ul.tabs {
+  background:none;
+  height:60px;
+  border:none;
+}
+.mod-form2-get-approved.steps .ttabs ul.tabs li a.current {
+ background:url("/public/images/bg_steps.gif") no-repeat scroll 0% 87% transparent;
+}
+.mod-form2-get-approved.steps .ttabs ul.tabs li a.filled {
+ background:url("/public/images/bg_steps.gif") no-repeat scroll 0% 87% transparent;
+ color:#fff;
+}
+
+.mod-form2-get-approved.steps .formBlock .formContent {
+ border:none;
+}
+.mod-form2-get-approved.steps .pane .stepimg {
+position:absolute;
+margin-left:450px;
+}
+.mod-form2-get-approved.steps .pane .stepimg img {
+	border:1px #777 solid;
+}
+.mod-form2-get-approved.steps .formBlock .block-head {
+  border:none;
+}
+.mod-form2-get-approved .hide {
+  display: none;
+}
+.mod-form2-get-approved .show {
+    display: block;
+}
+/*
+.mod-form2-get-approved.steps .box-terms.jsError {
+  background:#EA3700;
+}*/
+/*</modules/Form2/getApprovedDefault/styles/mod-form2-get-approved.css>*/
+/*<modules/Form2/customDefault/styles/mod-form2-custom.css>*/
+.mod-form2-custom .heading {
+	padding:25px 0 10px 8px;
+}
+.mod-form2-custom .box-application-type .block1 {
+	background:transparent url(/public/images/single-app.png) no-repeat 113px 0;
+	height:46px;
+	width:330px;
+}
+.mod-form2-custom .box-application-type .bg {
+	background:transparent url(/public/images/single-app.png) no-repeat 0 0;
+}
+.mod-form2-custom .box-application-type .block1 .option {
+	padding:10px 0 0 35px;
+}
+.mod-form2-custom .box-application-type .block1 .opedit {
+	padding:10px 0px 0px 0px;
+	margin-left:55px;
+}
+.mod-form2-custom .box-application-type .block2 {
+	background:transparent url(/public/images/joint-app.png) no-repeat scroll 5px 0;
+	height:51px;
+	margin-left:340px;
+	padding-top:10px;
+}
+.mod-form2-custom .box-application-type .block2edit {
+	margin-left:255px;
+}
+.mod-form2-custom .box-application-type .block2 .option {
+	margin-left:68px;
+	width:180px;
+}
+.mod-form2-custom .box-application-type .block2 .note {
+	padding:4px 0 0 68px;
+}
+
+.mod-form2-custom .formBlock .block-head {display:none;}
+.mod-form2-custom .formContent .column1 {float:left;width:350px} 
+.mod-form2-custom .formContent .column2 {display:none;margin-left:350px;}
+.mod-form2-custom .formContent .column2 .field .j_other_information {width:300px}
+
+.mod-form2-custom .formContent .column3 {margin-left:350px;}
+.mod-form2-custom .formContent .column3 .sml input.text,
+.mod-form2-custom .formContent .column3 .sml2 input.text
+ {width:92px;background:#f1f1f1;}
+.mod-form2-custom .formContent .column3 .sml2 {margin-left:110px;}
+.mod-form2-custom .formContent .column3 .sml {float:left}
+.mod-form2-custom .formContent .column3 .field.ytitle {margin-top:10px;}
+.mod-form2-custom .formContent .column1 input.financed_amount {background:#f1f1f1;}
+.mod-form2-custom .formContent .column1 input.net_to_sales {background:#f1f1f1}
+.mod-form2-custom .formContent .column1 input.cost_gps_box {background:#f1f1f1}
+.mod-form2-custom .formContent .column1 input.gross {background:#f1f1f1}
+
+
+/* .mod-form2-custom .formContent .column1 {float:left;width:330px} */
+/*</modules/Form2/customDefault/styles/mod-form2-custom.css>*/
+/*<modules/Gallery/default/styles/mod-vehicle-gallery-overlay.css>*/
+.mod-gallery .product-media {margin-top: 0;height: 60px;}
+.mod-gallery .navigations {margin-top: -270px}
+.jcarousel-item {
+	width: 69px;
+	height: 50px;
+}
+.jcarousel-container-horizontal,
+.jcarousel-clip-horizontal,
+.jcarousel-list-horizontal {
+	height: 50px;
+}
+.jcarousel-container-horizontal,
+.jcarousel-clip-horizontal {
+	width: 550px;
+}
+/*</modules/Gallery/default/styles/mod-vehicle-gallery-overlay.css>*/
+
